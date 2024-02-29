@@ -1,0 +1,8 @@
+
+GET, POST
+/users/signup
+POST
+/users/signin
+POST, PUT :ID, DELETE :ID,
+/blog/
+

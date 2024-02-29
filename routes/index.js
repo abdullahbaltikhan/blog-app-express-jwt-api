@@ -6,9 +6,10 @@ var router = express.Router();
 /* blog routes */
 
 /* GET users listing. */
-router.get('/', function(req, res, next) {
+router.get('/', (req, res) => {
     res.send('Roote Dir Get Req'); 
   });
+
 router.post('/', auth, blogController.createBlog);
 router.put('/:id', auth, blogController.updateBlog);
 router.delete('/:id', auth, blogController.deleteBlog);
